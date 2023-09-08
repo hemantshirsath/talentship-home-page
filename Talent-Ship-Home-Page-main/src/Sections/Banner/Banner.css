@@ -1,0 +1,94 @@
+.banner-wrapper {
+  height: 1250px;
+  background-color: rgb(8, 75, 119);
+  background-image: url("../../assets/1.jpg");
+  background-repeat: no-repeat;
+
+  /* background-image: url(../../assets/BannerWaveBg.png) , url(../../assets/1.jpg);
+  background-position: bottom left, top left;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner-background-wave{
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  object-fit: contain;
+}
+
+.banner-image {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  object-fit: contain;
+}
+
+.banner-content {
+  text-align: center;
+  color: aliceblue;
+  max-width: 800px;
+  margin: 0 auto;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+}
+
+.brand-name {
+  font-size: 50px;
+  font-weight: 20px;
+}
+
+.logo-banner {
+  width: 120px;
+  margin-right: 30px;
+}
+
+.banner-text {
+  font-size: 25px;
+}
+
+@media all and (max-width: 1050px) {
+  .banner-wrapper {
+    height: 1000px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .banner-wrapper {
+    height: 950px;
+  }
+  .banner-background-wave{
+    bottom: 0px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .brand-name {
+    font-size: 20px;
+    font-weight: 20px;
+  }
+  .logo-banner {
+    width: 60px;
+    margin-right: 30px;
+  }
+  .banner-content {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .banner-text {
+    font-size: 20px;
+  }
+  .banner-wrapper {
+    height: 800px;
+  }
+}

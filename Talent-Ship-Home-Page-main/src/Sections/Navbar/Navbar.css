@@ -1,0 +1,121 @@
+.navbar-color {
+  background: transparent;
+}
+
+.navbar-color.active {
+  background: rgba(0, 0, 0, 0.877);
+  /* background-image: url(../../assets/footer-shape-1.png), url(../../assets/footer-shape-2.png);
+  background-position: bottom -50px left -50px, top 0px right 0px;
+  background-repeat: no-repeat, no-repeat; */
+}
+
+.sticky-navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+/* Navbar company logo and name */
+.logo-Size {
+  width: 60px;
+  height: 60px;
+}
+.first-name {
+  font-size: 20px;
+  color: #d1f4f0ff;
+  font-weight: 500;
+}
+.last-name {
+  font-size: 18px;
+  color: #d1f4f0ff;
+  font-weight: 500;
+}
+.companyName {
+  margin: 20px 10px;
+}
+
+/* Navbar Button */
+.nav-button-outline{
+  font-weight: 500;
+  padding: .6rem 1.2rem;
+  color: white;
+  background: transparent;
+  border: 2px solid;
+  border-color: white;
+  transition: all 300ms ease-in;
+}
+.nav-button-outline:hover{
+  background: white;
+  color: rgb(3, 3, 3);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Navbar-social media logos */
+.social-logo {
+  color: var(--secondary);
+  font-size: 20px;
+}
+.social-logo:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  color: aliceblue;
+}
+
+/* Custom nav links styles */
+.navLink {
+  color: var(--secondary);
+  padding: 0% 0.5rem;
+  margin: 0 -0.25rem;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: aliceblue;
+}
+
+.flex-nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+/* For responsive */
+@media (max-width: 990px) {
+  .center-nav-links {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .flex-nav-links {
+    gap: 10px;
+  }
+  .all-social-links {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 350px) {
+  /* Navbar company logo and name */
+  .logo-Size {
+    width: 50px;
+    height: 50px;
+  }
+  .first-name {
+    font-size: 15px;
+    color: #d1f4f0ff;
+    font-weight: 500;
+  }
+  .last-name {
+    font-size: 15px;
+    color: #d1f4f0ff;
+    font-weight: 500;
+  }
+  .companyName {
+    margin: 20px 5px;
+  }
+}

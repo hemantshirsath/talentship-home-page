@@ -1,0 +1,96 @@
+/* .partner-container styles */
+.partner-container {
+    height: 65vh;
+    width: 90vw;
+    margin: 80px auto;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+/* .left-container styles */
+.left-container {
+    height: 70%;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    /* Use background-image with a URL to set the background */
+    background-image: url('src/assets/map.png');
+}
+
+/* .right-container styles */
+.right-container {
+    height: 70%;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .marquee animation styles */
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+/* .marquee image animation */
+.marquee img {
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* .text styles */
+.text {
+    font-size: 10rem;
+    color: white;
+    font-family: 'oswald', sans-serif;
+    /* Use background-image with a URL to set the background */
+    background-image: url('src/assets/bannerimg.jpg');
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-position: center;
+}
+
+/* .subtext styles */
+.subtext {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+/* Responsive styles for screens up to 750px */
+@media screen and (max-width: 750px) {
+    .partner-container {
+        display: block;
+        height: 100%;
+    }
+
+    /* Adjust width for both left and right containers */
+    .left-container,
+    .right-container {
+        width: 100%;
+    }
+
+    /* Adjust font size for smaller screens */
+    .text {
+        font-size: 5rem;
+    }
+
+    .subtext {
+        font-size: 1rem;
+    }
+}

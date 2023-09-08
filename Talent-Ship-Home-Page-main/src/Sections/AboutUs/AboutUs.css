@@ -1,0 +1,48 @@
+@font-face{
+    font-family: GoBoldHollowBold;
+    src: url("../../assets/Fonts/GoboldHollowBold.otf");
+    
+    font-family: GoBoldHollow;
+    src: url("../../assets/Fonts/GoboldHollow.otf");
+}
+.about-us{
+    width: 75%;
+    margin: 150px 0 50px 0;
+}
+.about-us-title{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 40px 0;
+}
+.about-us-description{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+.about-section-number{
+    font-family: "GoBoldHollow";
+    font-size: 120px;
+}
+
+@media (max-width: 990px) {
+    .about-us{
+        width: 80%;
+        margin: 100px 0;
+    }
+    .about-us-title{
+        font-size: 35px;
+        font-weight: 500;
+        margin: 40px 0;
+    }
+    .about-us-description{
+        font-size: 20px;
+        font-weight: 300;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .about-section-number{
+        font-family: "GoBoldHollow";
+        font-size: 100px;
+    }
+  }
