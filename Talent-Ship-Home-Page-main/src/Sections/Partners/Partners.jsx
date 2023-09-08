@@ -1,7 +1,6 @@
-import React from "react";
-import "./partners.css"; // Updated CSS file name
-
-const Partner = () => {
+import react from "react";
+import "./Partners.css";
+const Partners = () => {
   const partnerLogos = [
     "src/assets/logo1.png",
     "src/assets/logo2.png",
@@ -11,32 +10,74 @@ const Partner = () => {
     "src/assets/logo6.png",
     // Add more logos as needed
   ];
-
   const backgroundImageUrl = "src/assets/map.png";
   const bigTextBackgroundUrl = "src/assets/bannerimg.jpg";
-
   return (
     <>
-      <div className="partner-container">
-        <div className="left-container">
+      <div className="partner">
+        <div className="left">
           <div className="container">
             <div className="text">100</div>
-            <div className="subtext">Partners Worldwide</div>
+            <div className="subtext">Partners In world wide</div>
           </div>
         </div>
-        <div className="right-container">
-          <div className="partners-section">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {partnerLogos.map((logo, index) => (
-                <div
-                  key={index}
-                  className="partner-logo-container bg-white rounded-md p-2 shadow-md overflow-hidden"
-                >
-                  <div className="marquee">
-                    <img src={logo} alt={`Partner ${index + 1}`} />
-                  </div>
-                </div>
-              ))}
+        <div className="right">
+          <div className="slider">
+            <div className="slide-track mt-10">
+              <div className="slide">
+                <img
+                  className="w-[140px] p-4"
+                  src="src/assets/logo1.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className="slide">
+                <img
+                  className="w-[140px] p-4"
+                  src="src/assets/logo2.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className="slide">
+                <img
+                  className="w-[140px] p-4"
+                  src="src/assets/logo3.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className="slide">
+                <img
+                  className="w-[140px] p-4"
+                  src="src/assets/logo4.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className="slide">
+                <img
+                  className="w-[140px] p-4"
+                  src="src/assets/logo5.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div className="slide">
+                <img
+                  className="w-[140px] p-4"
+                  src="src/assets/logo6.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -44,5 +85,4 @@ const Partner = () => {
     </>
   );
 };
-
-export default Partner;
+export default Partners;

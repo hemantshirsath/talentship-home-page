@@ -1,7 +1,6 @@
 .banner {
     margin: 0;
     font-family: Helvetica, sans-serif;
-    /* background: #1f1f1f; */
     display: flex;
     min-height: 60vh;
     justify-content: center;
@@ -95,6 +94,8 @@ img {
     .skewed {
         display: block;
         width: 20em;
+        box-shadow: none;
+
     }
 
     .image,
